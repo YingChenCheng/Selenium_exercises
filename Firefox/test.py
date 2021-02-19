@@ -11,7 +11,7 @@ options.add_argument('--headless')
 firefox = webdriver.Firefox(options=options, executable_path='Selenium/Firefox/geckodriver')
 
 startTime = time.time()
-for i in range(1):
+for i in range urls:
   firefox.get(urls[i])
 endTime = time.time()
 print (endTime-startTime)
