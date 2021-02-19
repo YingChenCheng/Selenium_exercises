@@ -15,7 +15,7 @@ options.add_argument('--headless')
 chrome = webdriver.Chrome(executable_path='Selenium/Chrome/chromedriver', chrome_options=options)
 
 startTime = time.time()
-for i in range(10):
+for i in range urls:
   chrome.get(urls[i])
   try:
     element_present = EC.presence_of_element_located((By.ID, 'main'))
